@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/NoteViewContraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/NoteViewCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:contentPadding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <LinearLayout
+            android:id="@+id/NoteViewLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/NoteTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/NoteTitle"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/NoteViewSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/NoteSubject" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
